@@ -18,9 +18,9 @@ var Router = router.Router;
 var browserHistory = router.browserHistory;
 
 // Reference the high-level components
-var Main = require("../components/Main");
-var Saved = require("../components/Saved");
-var Results = require("../components/Results");
+var Main = require("../app/components/Main");
+var Saved = require("../app/components/Saved");
+var Results = require("../app/components/Results");
 
 
 // Export the Routes
