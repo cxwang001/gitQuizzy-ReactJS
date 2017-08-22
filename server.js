@@ -5,6 +5,10 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 var Article = require('./models/User.js');
+Require History Schema
+var History = require("./models/History");
+ auth0
+
 
 // Create Instance of Express
 var app = express();
@@ -91,3 +95,4 @@ app.delete('/api/user/', function(req, res){
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
+auth0
