@@ -15,7 +15,7 @@ class Nav extends Component {
             <Link to="/">Main</Link>
           </li>
           <li>
-           <Link to="/special">Play</Link>
+           <Link to="/special">Header</Link>
           </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
