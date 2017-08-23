@@ -29,6 +29,20 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // This is how we serve/route our static pages 
 app.use(express.static("public"));
 
+const authCheck = jwt({
+  secret: jwks.expressJwtSecret({
+        cache: true,
+        rateLimit: true,
+        jwksRequestsPerMinute: 5,
+        // YOUR-AUTH0-DOMAIN name e.g prosper.auth0.com
+        jwksUri: "https://cxwang001.auth0.com/.well-known/jwks.json"
+    }),
+    // This is the identifier we set when we created the API
+    audience: '{YOUR-API-AUDIENCE-ATTRIBUTE}',
+    issuer: 'cxwang001.auth0.com',
+    algorithms: ['RS256']
+});
+
 // -------------------------------------------------
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
