@@ -3,12 +3,17 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-
-var Article = require('./models/User.js');
-Require History Schema
+// jwt is for decoding the auth0 key of user password
+var jwt = require('express-jwt');
+var jwks = require('jwks-rsa');
+// adding for posterity of tutorial
+var cors = require('cors');
+// Auth0, not sure how this is used here, but leaving in for WILLIAM
+var auth0 = require("auth0-js")
+// Require the Player model so we can store Player name, wins, and losses
+var Player = require('./models/Player.js');
+//Require History Schema
 var History = require("./models/History");
- auth0
-
 
 // Create Instance of Express
 var app = express();
@@ -46,7 +51,7 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-app.get('/api/user', function(req, res) {
+app.get('/api/Player', function(req, res) {
 
   User.find({})
     .exec(function(err, doc){
@@ -60,14 +65,14 @@ app.get('/api/user', function(req, res) {
     })
 });
 
-app.post('/api/user', function(req, res){
-  var newUser = new User(req.body);
+app.post('/api/Player', function(req, res){
+  var newPlayer = new Player(req.body);
 
   var name = req.body.name;
   var win = req.body.win;
   var loss = req.body.loss;
 
-  newUser.save(function(err, doc){
+  newPlayer.save(function(err, doc){
     if(err){
       console.log(err);
     } else {
@@ -76,7 +81,7 @@ app.post('/api/user', function(req, res){
   });
 });
 
-app.delete('/api/user/', function(req, res){
+app.delete('/api/Player/', function(req, res){
 
   var url = req.param('url');
 
@@ -95,4 +100,5 @@ app.delete('/api/user/', function(req, res){
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
-auth0
+
+auth0;
