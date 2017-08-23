@@ -1,3 +1,6 @@
+var path = require('path');
+var webpack = require('webpack');
+
 module.exports = {
 
   // This is the entry point or start of our react applicaton
@@ -5,8 +8,9 @@ module.exports = {
 
   // The plain compiled JavaScript will be output into this file
   output: {
-    filename: "public/bundle.js"
-  },
+        path: path.resolve(__dirname, 'build'),
+        filename: './app/bundle.js'
+    },
 
   // This section desribes the transformations we will perform
   module: {
@@ -25,9 +29,12 @@ module.exports = {
       }
     ]
   },
+  stats: {
+        colors: true
+  },
   // This lets us debug our react code in chrome dev tools. Errors will have lines and file names
   // Without this the console says all errors are coming from just coming from bundle.js
-  devtool: "eval-source-map"
+  devtool: "source-map"
 };
 
 auth0;
