@@ -23160,7 +23160,7 @@ var Card = function (_React$Component) {
         value: function render() {
             var style = {
                 width: this.props.width + 'px',
-                height: this.props.height + 'px',
+                height: this.props.height - 5 + 'px',
                 transform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
