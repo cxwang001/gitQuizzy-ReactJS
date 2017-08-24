@@ -4,8 +4,8 @@ var data = [
     "questions": [
       {
         "points": 100,
-        "question": "<p>Synchronous programming means that code is executed _________________ from top-to-bottom.</p><ol><li>Linearly</li><li>Sequentially</li><li>Unsequenced</li><li>All of the above</li></ol>",
-        "answer": "B. Sequentially"
+        "question": "Synchronous programming means that code is executed _________________ from top-to-bottom.",
+        "answer": "Sequentially"
       },
       {
         "points": 200,
@@ -74,18 +74,18 @@ var data = [
       },
       {
         "points": 300,
-        "question": "<p>What's being logged and how is this new ES6 feature called?</p><code>var colors = ['red', 'blue', 'green'];<br/>var [primary, secondary, tertiary] = colors;<br/>console.log(secondary);</code>",
-        "answer": "<ul><li>blue</li><li>Array destructuring</li></ul>"
+        "question": "<p>What is this new ES6 feature called?<br> What is the console log output?</p><code>var news = ['north', 'east', 'west', 'south'];<br/>var [n, e, w, s] = news;<br/>console.log(w);</code>",
+        "answer": "<ul><li>Array destructuring</li><li>west</li></ul>"
       },
       {
         "points": 400,
-        "question": "<p>What's being logged and name 4 new features of ES6 used in this code snippet?</p><code>let greeting = (name, msg='Hello') => `${msg}, ${name}`;<br/>console.log(greeting('Christophe');</code>",
-        "answer": "<p>Hello, Christophe</p><ul><li>let variables</li><li>Arrow functions</li><li>Default parameters</li><li>Template strings</li></ul>"
+        "question": "<p>Name 4 new features of ES6 used and.<br>what is the console log output?</p><code> let greeting = (name, msg='Hello') => `${msg}, ${name}`;<br/>_  console.log(greeting('Jerome');</code>",
+        "answer": "<ul><li>let variables</li><li>Arrow functions</li><li>Default parameters</li><li>Template strings</li></ul>"
       },
       {
         "points": 500,
-        "question": "QUESTION",
-        "answer": "ANSWER"
+        "question": "<p>What is this code doing?</p><code>let a= 12,<br/>_    b=3;<br/>[a,b] = [b, a];</code>",
+        "answer": "It swaps the values inside a and b, without using extra variables."
       }
     ]
   },
@@ -99,8 +99,8 @@ var data = [
       },
       {
         "points": 200,
-        "question": "What are the colors of the olympic rings?",
-        "answer": "<img src='assets/img/olympic_rings.png'/>"
+        "question": "What animal represents React-Rocks?",
+        "answer": "<img src='assets/img/react.jpg'/>"
       },
       {
         "points": 300,
