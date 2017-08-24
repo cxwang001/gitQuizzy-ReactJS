@@ -2,7 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from './components/Card';
 import Headers from './components/Headers';
+import { Router, Route, browserHistory } from 'react-router';
+// require the foler /app/components/Login to pull up Auth0 login window
+import App from './app/components/Login';
+
 import request from './components/request';
+
+const Root = () => {
+  return (
+    <div className="container">
+      <Router history={browserHistory}>
+        <Route path="/" component={Login}/>
+        <Route path="/special" component={Login} onEnter={requireAuth}/>
+      </Router>
+    </div>
+  )
+}
 
 class App extends React.Component {
 
