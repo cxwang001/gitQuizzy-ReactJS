@@ -64,7 +64,7 @@ var data = [
     "questions": [
       {
         "points": 100,
-        "question": "<p>Constants (const) are:</p><ol><li>Block scoped</li><li>Function scoped</li><li>Global</li></ol>",
+        "question": "<p>Constants (const) are:<br><label><input type='radio' value='A'/>A. Block scoped</label><br><label><input type='radio' value='B'/>B. Function scoped</label><br><label><input type='radio' value='C'/>B. Global</label>",
         "answer": "A. Block scoped"
       },
       {
