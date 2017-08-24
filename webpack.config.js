@@ -8,8 +8,8 @@ module.exports = {
 
   // The plain compiled JavaScript will be output into this file
   output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: './app/bundle.js'
+        path: path.resolve(__dirname, 'server'),
+        filename: 'bundle.js'
     },
 
   // This section desribes the transformations we will perform
@@ -21,7 +21,7 @@ module.exports = {
         // Webpack will only process files in our app folder. This avoids processing
         // node modules and server files unnecessarily
         include: /app/,
-        loader: "babel",
+        loader: "babel-loader",
         query: {
           // These are the specific transformations we'll be using.
           presets: ["react", "es2015"]
@@ -36,6 +36,3 @@ module.exports = {
   // Without this the console says all errors are coming from just coming from bundle.js
   devtool: "source-map"
 };
-
-auth0;
-
