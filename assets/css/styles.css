@@ -91,7 +91,7 @@ p {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border: solid 4px #FFFFFF;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 .card > .front {
