@@ -23164,7 +23164,7 @@ var Card = function (_React$Component) {
                 transform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
-                front = this.state.completed ? _react2.default.createElement('img', { src: 'assets/img/react.svg' }) : _react2.default.createElement(
+                front = this.state.completed ? _react2.default.createElement('img', { src: 'assets/img/capbulb.svg' }) : _react2.default.createElement(
                 'span',
                 { className: 'points' },
                 this.props.question.points
@@ -23192,7 +23192,7 @@ var Card = function (_React$Component) {
                         'div',
                         { className: 'back' },
                         _react2.default.createElement('span', { dangerouslySetInnerHTML: this.getLabelBack() }),
-                        _react2.default.createElement('img', { src: 'assets/img/react.svg' })
+                        _react2.default.createElement('img', { src: 'assets/img/capbulb.svg' })
                     )
                 )
             );
