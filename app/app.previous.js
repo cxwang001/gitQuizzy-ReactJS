@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import router from 'react-router';
-import { BrowserRouter } from 'react-router-dom'
-// import Nav from './components/Nav';
-// import the Headers route
-import Headers from './components/Headers';
 import Card from './components/Card';
-// import Nav from './components/Nav';
-// import routes from './config/routes'
+import Headers from './components/Headers';
+import request from './components/request';
 
 class App extends React.Component {
 
@@ -74,12 +69,10 @@ class App extends React.Component {
             })
         });
         return (
-            
             <div>
                 <Headers data={this.state.data} headerWidth={cardWidth}/>
                 {cards}
             </div>
-         
         );
     }
 

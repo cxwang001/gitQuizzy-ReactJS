@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import router from 'react-router';
-import { BrowserRouter } from 'react-router-dom'
-// import Nav from './components/Nav';
-// import the Headers route
-import Headers from './components/Headers';
 import Card from './components/Card';
-// import Nav from './components/Nav';
-// import routes from './config/routes'
+import Headers from './components/Headers';
+import { Router, Route, browserHistory } from 'react-router';
+// require the foler /app/components/Login to pull up Auth0 login window
+import App from './app/components/Login';
+
+import request from './components/request';
+
+const Root = () => {
+  return (
+    <div className="container">
+      <Router history={browserHistory}>
+        <Route path="/" component={Login}/>
+        <Route path="/special" component={Login} onEnter={requireAuth}/>
+      </Router>
+    </div>
+  )
+}
 
 class App extends React.Component {
 
@@ -74,12 +84,10 @@ class App extends React.Component {
             })
         });
         return (
-            
             <div>
                 <Headers data={this.state.data} headerWidth={cardWidth}/>
                 {cards}
             </div>
-         
         );
     }
 
