@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import router from 'react-router';
 import { BrowserRouter } from 'react-router-dom'
-// import Nav from './components/Nav';
+import Nav from './components/Nav';
 // import the Headers route
 import Headers from './components/Headers';
 import Card from './components/Card';
