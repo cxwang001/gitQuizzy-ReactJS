@@ -3,20 +3,43 @@ import { Link } from 'react-router';
 import app from '../app/app';
 import '../App.css';
 
-class Nav extends Component {
+// class Nav extends Component {
 
-  function handleClick(clickedKey) {
-  <button onClick={() => browserHistory.push(`/app/app?id=${account.AccountName}`)}></button>
-}
+//   function handleClick(clickedKey) {
+//   <button onClick={() => browserHistory.push(`/app/app?id=${account.AccountName}`)}></button>
+// }
+class Nav extends React.Component {
 
-const navInstance = (
-  <Nav bsStyle="pills" activeKey={1} onClick={handleClick}>
-    <NavItem eventKey={1} href="../app/app">Restart Game</NavItem>
-    <NavItem eventKey={2} title="Item">Item</NavItem>
-  </Nav>
-)};
+    render() {
 
-ReactDOM.render(navInstance, mountNode);
+        let style = {
+                width: this.props.headerWidth
+            },
+            headers = [];
+
+        this.props.data.forEach((category, index) => headers.push(<span className='header' style={style} key={index}>{category.category}</span>));
+
+        return (
+            <div className='nav'>
+            const navInstance = (
+              <Nav bsStyle="pills" activeKey={2} onClick={handleClick}>
+                <NavItem eventKey={1} href="../app/app">Restart Game</NavItem>
+                <NavItem eventKey={2} title="Item">Item</NavItem>
+              </Nav>
+            )};
+                {headers}
+            </div>
+        );
+    }
+
+};
+
+export default Nav;
+
+
+
+
+// ReactDOM.render(navInstance, mountNode);
 
 //   render() {
 //     return (
@@ -43,4 +66,4 @@ ReactDOM.render(navInstance, mountNode);
 
           // 
 
-export default Nav;
+// export default Nav;

@@ -13,7 +13,7 @@ import Card from './components/Card';
 
 export default () => (
   <Switch>
-    <Route path="/" exact component={app} />
+    <Route path="/" component={app} />
   </Switch>
 );
 
