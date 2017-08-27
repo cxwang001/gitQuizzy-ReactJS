@@ -1,5 +1,4 @@
 var mongoose = require("mongoose");
-
 var Schema = mongoose.Schema;
 
 var PlayerSchema = new Schema({
@@ -10,6 +9,9 @@ var PlayerSchema = new Schema({
     type: Number
   },
   losses: {
+    type: Number
+  },
+  lastScore: {
     type: Number
   }
 });

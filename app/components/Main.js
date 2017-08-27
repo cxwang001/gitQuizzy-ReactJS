@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Import the hierarchy
-import Card from './Card';
+import data from './data';
+import navbarInstance from './Nav';
 import Headers from './Headers';
+import Card from './Card';
 import request from './request';
 
 class Main extends React.Component {

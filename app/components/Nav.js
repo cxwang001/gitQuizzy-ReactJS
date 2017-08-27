@@ -1,69 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import app from '../app/app';
-import '../App.css';
+// import { Link } from 'react-router';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
-// class Nav extends Component {
+            
+const navbarInstance = (
+  <Navbar>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#">GitQuizzly</a>
+      </Navbar.Brand>
+    </Navbar.Header>
+    <Nav>
+      <NavItem eventKey={1} href="/">Restart Game</NavItem>
+      <NavItem eventKey={2} href="#">Link</NavItem>
+    </Nav>
+  </Navbar>
+);
 
-//   function handleClick(clickedKey) {
-//   <button onClick={() => browserHistory.push(`/app/app?id=${account.AccountName}`)}></button>
-// }
-class Nav extends React.Component {
-
-    render() {
-
-        let style = {
-                width: this.props.headerWidth
-            },
-            headers = [];
-
-        this.props.data.forEach((category, index) => headers.push(<span className='header' style={style} key={index}>{category.category}</span>));
-
-        return (
-            <div className='nav'>
-            const navInstance = (
-              <Nav bsStyle="pills" activeKey={2} onClick={handleClick}>
-                <NavItem eventKey={1} href="../app/app">Restart Game</NavItem>
-                <NavItem eventKey={2} title="Item">Item</NavItem>
-              </Nav>
-            )};
-                {headers}
-            </div>
-        );
-    }
-
-};
-
-export default Nav;
-
-
-
-
-// ReactDOM.render(navInstance, mountNode);
-
-//   render() {
-//     return (
-//       <nav className="navbar navbar-default">
-//         <div className="navbar-header">
-//           <Link className="navbar-brand" to="/">GitQuizzly</Link>
-//         </div>
-//         <ul className="nav navbar-nav">
-//           <li>
-//             <Link to="/">app</Link>
-//           </li>
-        //   <li>
-          //  <Link to="/special">app</Link>
-          // </li>
-//         </ul>
-//         <ul className="nav navbar-nav navbar-right">
-//           <li><button className="btn btn-info" id="playagain">Play again</button></li>
-//           <li><button className="btn btn-danger" id="test">TEST BUTTON</button></li>
-//         </ul>
-//       </nav>
-//     );
-//   }
-// }
-
-          // 
-
-// export default Nav;
+export default navbarInstance;
