@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 // Import the hierarchy
 import data from './data';
-import navbarInstance from './Nav';
+// import Nav from './Nav';
 import Headers from './Headers';
 import Card from './Card';
 import request from './request';

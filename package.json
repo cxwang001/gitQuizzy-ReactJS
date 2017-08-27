@@ -4,7 +4,6 @@
   "description": "Jeopardy-like flashcard learning game",
   "main": "data.js",
   "dependencies": {
-    "auth0-lock": "^10.20.0",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "cors": "^2.8.4",
