@@ -60,11 +60,11 @@ let data = [
     ]
   },
   {
-    "category": "ES 2015",
+    "category": "ES5/6",
     "questions": [
       {
         "points": 100,
-        "question": "<p>Constants (const) are:<br><input type='radio' value='A' text='A. Block scoped'/><br><label><input type='radio' value='B'/>B. Function scoped</label><br><label><input type='radio' value='C'/>B. Global</label></p>",
+        "question": "<p>Constants (const) are:<br><ul><li>A. Block scoped'/></li><li>B. Function scoped</li><li>B. Global</li></ul>",
         "answer": "A. Block scoped"
       },
       {
@@ -84,23 +84,23 @@ let data = [
       },
       {
         "points": 500,
-        "question": "<p>What is this code doing?</p><code>let a= 12,<br/>_    b=3;<br/>[a,b] = [b, a];</code>",
+        "question": "<p>What is this code doing?</p><code>let a= 12,<br/>\xa0\xa0\xa0\xa0b=3;<br/>\xa0\xa0\xa0\xa0[a,b] = [b, a];</code>",
         "answer": "It swaps the values inside a and b, without using extra variables."
       }
     ]
   },
   {
-    "category": "Feeling Lucky",
+    "category": "Fun Facts",
     "questions": [
       {
         "points": 100,
-        "question": "Using the proposed ECMAScript module syntax, how do you load the Mortgage.js module from the current directory and make all its members available in an object named mortgage?",
-        "answer": "<code>import * as mortgage from './Mortgage';</code>"
+        "question": "What is the React.js logo?",
+        "answer": "<img src='assets/img/react.svg'/>"
       },
       {
         "points": 200,
-        "question": "What animal represents React-Rocks?",
-        "answer": "<img src='assets/img/react.jpg'/>"
+        "question": "React was partly inspired by XHP which was built by _____________ at Facebook in 2009 to componentize Facebook's UI.",
+        "answer": "Marcel Laverdet"
       },
       {
         "points": 300,
@@ -109,13 +109,13 @@ let data = [
       },
       {
         "points": 400,
-        "question": "What's the hex color of the React logo?",
-        "answer": "#61DAFB"
+        "question": "React is not another _______________, or any other kind of framework. It's just a library for rendering your views.",
+        "answer": "MVC framework"
       },
       {
         "points": 500,
-        "question": "QUESTION",
-        "answer": "ANSWER"
+        "question": "What is the React-Router logo?",
+        "answer": "<img src='assets/img/react-router.svg'/>"
       }
     ]
   }
