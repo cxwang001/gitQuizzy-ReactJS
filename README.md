@@ -20,9 +20,11 @@
 
 gitQuizzly is a brain tease game to reinforce learned ideas through fun quizzes and at the same time reinforce or brush up on various web developer technologies or other fun/learning categories.
 
-You can 
-    * Click on each card under any category 
-    * After you have seen the question you can click the card again to see the answer
+You can:
+
+* Click on each card under any category 
+
+* After you have seen the question you can click the card again to see the answer
 
 ##  Creating the App
 
