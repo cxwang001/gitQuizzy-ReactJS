@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: url("../img/matrix_red.gif"); 
+    background: url("../img/yellowstar.gif"); 
     font-family: 'Roboto', sans-serif;
     overflow: scroll;
     z-index: 1;
@@ -13,7 +13,7 @@ p {
 
 .headers {
     position: absolute;
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
     font-size: 28px;
     /*padding-top: 16px;*/
@@ -98,8 +98,8 @@ p {
 .card > .front {
     -webkit-transform: rotateY(0deg) !important;
     transform: rotateY(0deg) !important;
-    background-color: #ffff00;
-    color: black;
+    background-color: #a3a375;
+    color: white;
     font-size: 32px;
     z-index: 2;
 }
@@ -107,8 +107,8 @@ p {
 .card > .back {
     -webkit-transform: rotateY(180deg) !important;
     transform: rotateY(180deg) !important;
-    background-color: #ffff00;
-    color: black;
+    background-color: #a3a375;
+    color: white;
     font-size: 32px;
     font-weight: 300;
     padding: 0 50px;
