@@ -9,7 +9,7 @@
 
 ## Table of Contents
 
-- [About NYT Article Miner](#about-gitquizzy)
+- [About gitQuizzy](#about-gitquizzy)
 - [More info about creating the app](#creating-the-app)
 - [Install the app locally](#downloading-and-installing)
 - [Additional features to add](#additional-features-to-add)
@@ -22,9 +22,9 @@ gitQuizzly is a brain tease game to reinforce learned ideas through fun quizzes 
 
 You can:
 
-* Click on each card under any category 
+* Click on each card under any category.
 
-* After you have seen the question you can click the card again to see the answer
+* After you have seen the question you can click the card again to see the answer.
 
 ##  Creating the App
 
