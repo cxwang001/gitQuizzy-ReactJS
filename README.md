@@ -1,6 +1,6 @@
 ## gitQuizzy
 
-![alt text](./public/img/gitquizzly.png) 
+![alt text](./public/assets/img/gitquizzly.png) 
 
 ## Overview
   
