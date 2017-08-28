@@ -1,4 +1,4 @@
-##gitQuizzy
+## gitQuizzy
 
 [Will be adding images here.]
 
