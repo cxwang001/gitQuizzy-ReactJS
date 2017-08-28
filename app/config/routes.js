@@ -1,21 +1,21 @@
-// Inclue the React library
-import React from 'react';
-import router from 'react-router';
-// Include the BrowserRouter, Route component, Switch (redirect routes)
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// // Inclue the React library
+// import React from 'react';
+// import router from 'react-router';
+// // Include the BrowserRouter, Route component, Switch (redirect routes)
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import app from '../app';
-// Here's the path for the Headers, includes the Nav bar
-import Headers from './components/Headers';
-// Import the game section using the Card path
-import Card from './components/Card';
+// import app from '../app';
+// // Here's the path for the Headers, includes the Nav bar
+// import Headers from './components/Headers';
+// // Import the game section using the Card path
+// import Card from './components/Card';
 
 
-export default () => (
-  <Switch>
-    <Route path="/" component={app} />
-  </Switch>
-);
+// export default () => (
+//   <Switch>
+//     <Route path="/" component={app} />
+//   </Switch>
+// );
 
 // Register the Callback route
 // import Callback from './components/Callback';
