@@ -1,6 +1,6 @@
 ## gitQuizzy
 
-[Will be adding images here.]
+![alt text](./public/img/gitquizzly.png) 
 
 ## Overview
   
