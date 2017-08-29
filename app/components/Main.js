@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 // Import the hierarchy
 import data from './data';
-// import Nav from './Nav';
+import NavigationBar from './NavigationBar';
 import Headers from './Headers';
 import Card from './Card';
 import request from './request';
@@ -56,6 +56,7 @@ class Main extends React.Component {
         });
         return (
             <div className="mainContainer">
+                <NavigationBar />
                 <Headers data={this.state.data} headerWidth={cardWidth}/>
                 {cards}
             </div>

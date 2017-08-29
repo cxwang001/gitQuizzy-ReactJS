@@ -11,6 +11,25 @@ p {
     margin: 0;
 }
 
+/* Begin NavBar custom styling */
+.appbarBrand {
+    background-color: black;
+}
+
+.brandName {
+    color: white;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.buttonRestart {
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 10px;
+}
+
+/* Begin headers custom styling */
 .headers {
     position: absolute;
     color: #000000;
@@ -99,16 +118,17 @@ p {
     -webkit-transform: rotateY(0deg) !important;
     transform: rotateY(0deg) !important;
     background-color: #a3a375;
-    color: white;
+    color: black;
     font-size: 32px;
     z-index: 2;
+    opacity: 0.9;
 }
 
 .card > .back {
     -webkit-transform: rotateY(180deg) !important;
     transform: rotateY(180deg) !important;
     background-color: #a3a375;
-    color: white;
+    color: black;
     font-size: 32px;
     font-weight: 300;
     padding: 0 50px;

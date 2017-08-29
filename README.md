@@ -28,11 +28,11 @@ You can:
 
 ##  Creating the App
 
-#### This project utilizes the following technologies:
+#### This project utilizes the following technologies:\
 
-1. Node
-2. Express
-3. React
+1. React
+2. Node
+3. Express
 4. Twilio
 5. HTML
 6. CSS
