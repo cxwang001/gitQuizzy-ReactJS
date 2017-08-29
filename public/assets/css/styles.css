@@ -26,7 +26,9 @@ p {
     font-size: 20px;
     color: white;
     float: right;
+    margin-top: 15px;
     margin-right: 10px;
+    color: black;
 }
 
 /* Begin headers custom styling */
@@ -227,6 +229,24 @@ code {
 }
 
 @media screen and (min-width : 0) and (max-width : 640px) {
+
+    .appbarBrand {
+    background-color: black;
+    }
+
+    .brandName {
+        color: white;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    .buttonRestart {
+        font-size: 10px;
+        color: white;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 
     .headers {
         font-size: 14px;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Appbar, Button, Container } from 'muicss/react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
 function refreshPage(){ 
     window.location.reload(); 
@@ -9,7 +8,11 @@ function refreshPage(){
 class NavigationBar extends Component {
   render() {
     let s1 = {verticalAlign: 'middle'};
-    let s2 = {textAlign: 'right'};
+    let s2 = {
+              textAlign: 'right',
+              size: 'medium',
+              background: 'red'
+              };
 
     return (
 
@@ -18,7 +21,7 @@ class NavigationBar extends Component {
          <tbody>
            <tr style={s1}>
              <td className="mui--appbar-height brandName">GitQuizzy</td>
-             <Button className="buttonRestart" color="danger" size="large" style={s2} onClick={ refreshPage }>Restart Game</Button>
+             <Button className="buttonRestart" style={s2} onClick={ refreshPage }>Restart Game</Button>
            </tr>
          </tbody>
        </table>

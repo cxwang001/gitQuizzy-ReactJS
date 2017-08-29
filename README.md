@@ -31,30 +31,33 @@ You can:
 #### This project utilizes the following technologies:\
 
 1. React
-2. Node
-3. Express
-4. Twilio
-5. HTML
-6. CSS
-7. BootStrap
+2. ES6
+3. Node
+4. Express
+5. Webpack
+6. MUICSS
+7. CSS
+8. React-bootstrap
+9. Twilio
 
 
 ##  Downloading and Installing
 
 Should you choose to clone this app to your computer, here are the package dependecies you'll need to install.
 
-    Run `npm init`. When that's finished, install and save these npm packages:
+    Run `npm init` then `npm install` to add and save these npm packages:
         1.  express         7.  morgan
         2.  body-parser     8.  history
-        3.  mongoose        9.  path
-        4.  body-parser     10. react
+        3.  muicss          9.  path
+        4.  webpack         10. react
         5.  axios           11. react-dom
-        6.  debug           12. react-router
+        6.  muicss          12. react-router
 
 
 ##  Additional features to add
 
 - User Authentication
+- User customization--Background, card colors, questions/answers
 - Point system to keep track of user's progress
 - A results page that displays user's score and also provides resource links to the questions missed.
 
