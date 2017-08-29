@@ -60,8 +60,3 @@ Should you choose to clone this app to your computer, here are the package depen
 - User customization--Background, card colors, questions/answers
 - Point system to keep track of user's progress
 - A results page that displays user's score and also provides resource links to the questions missed.
-
-
-
-
-
