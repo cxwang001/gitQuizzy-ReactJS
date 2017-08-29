@@ -28,7 +28,7 @@ You can:
 
 ##  Creating the App
 
-#### This project utilizes the following technologies:\
+#### This project utilizes the following technologies:
 
 1. React
 2. ES6
@@ -38,14 +38,15 @@ You can:
 6. MUICSS
 7. CSS
 8. React-bootstrap
-9. Twilio
 
 
 ##  Downloading and Installing
 
 Should you choose to clone this app to your computer, here are the package dependecies you'll need to install.
 
-    Run `npm init` then `npm install` to add and save these npm packages:
+    Run `npm init` then `npm install` to add the necessary dependencies
+    
+    ( These are the main npm packages installed: )
         1.  express         7.  morgan
         2.  body-parser     8.  history
         3.  muicss          9.  path
