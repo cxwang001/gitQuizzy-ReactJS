@@ -1,4 +1,5 @@
 ## gitQuizzy
+https://gitquizzy.herokuapp.com/
 
 ![alt text](./public/assets/img/gitquizzy.png) 
 
